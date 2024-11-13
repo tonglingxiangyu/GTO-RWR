@@ -1,20 +1,15 @@
-# Graph-based Solutions with residuals for Intrusion Detection
-This repository contains the implementation of the modified Edge-based GraphSAGE ([E-GraphSAGE](https://arxiv.org/abs/2103.16329)) and Edge-based Residual Graph Attention Network (E-ResGAT) as well as their original versions. They are designed to solve intrusion detecton tasks in a graph-based manner.
+## 背景
 
-# Background
-Cybersecurity has drawn growing attention in contemporary society, due to the increasingly sophisticated cyber threats. Many challenges still remain to solve and these problems are an active research. Namely, for intrusion detection, new algorithms that are more robust, effective and able to use more information available are needed. Moreover, the intrusion detection task usually suffers from extreme class imbalance between normal and malicious traffic which is still an unsolved issue. Recently, graph-based deep learning has achieved state-of-the-art performance to model the network topology in cybersecurity tasks. However, much remain to be researched as this is an active research area, where only a few works exist using GNNs to tackle the intrusion detection problem. Moreover, other promising avenues such as the use of the attention mechanism are still under-explored. This paper presents two novel graph-based solutions for intrusion detection, the modified E-GraphSAGE and E-ResGAT algorithms. The first is based on the established GraphSAGE while the second relies on the graph attention networks (GATs) to tackle the network intrusion detection problem. The key idea of these solutions is to integrate residual learning into the GNN leveraging the graph information available. Our proposed models add residual connections as a strategy to deal with the high class imbalance, aiming at retaining the original information and performing better on the minority classes. An extensive experimental evaluation based on four recent intrusion detection datasets shows the excellent performance of our models, especially when predicting minority classes.
+本项目旨在通过基于E-GraphSAGE模型的网络流量异常检测方法，提升对工业互联网中网络流量的实时监控和安全分析能力。随着工业互联网设备的广泛应用，网络安全威胁不断增加，及时检测和识别异常网络行为成为确保网络安全的关键。本项目结合图神经网络（GNN）和图拓扑优化，通过对网络流量数据的深度学习与分析，能够高效发现潜在的异常流量行为。
 
-# Demo
-To replicate results in the paper, call `fit_mdoel.py` with appropriate arguments. The datasets CES-CIC, Darknet, ToN-IoT and UNSW-NB15 are supported here. For example, to replicate the E-ResGAT multi-classification model on UNSW-NB15 dataset, call
+## 作用
 
-    
-    python fit_model.py --alg="gat" --dataset="UNSW-NB15" --binary=False --residual=True
-    
-Besides, the original E-GraphSAGE and GAT are also implemented. One can simply run the original version by including the argument `--residual = False`.
+- **网络流量异常检测**：利用图神经网络，检测工业互联网中的网络流量异常，帮助识别潜在的安全威胁。
+- **图采样**：结合图拓扑优化和随机游走重启（RWR）算法，优化图结构，提升检测精度与效率。
+- **智能化警告**：实时分析网络数据，提供智能化的警告与响应方案，提高网络防护能力。
 
-### Installation
-This implementation requires Python 3.X. See `requirements.txt` for a list installed packages and their versions. The main packages are:
+## 主要功能
 
-    numpy
-    pytorch
-    scikit-learn
+- 基于E-GraphSAGE模型的流量数据分析与处理。
+- 采用图神经网络对网络流量进行异常行为检测。
+- 网络流量数据采样与图拓扑优化。
