@@ -1,0 +1,14 @@
+Macro-average AUC-ROC: 1.00
+Weighted-average AUC-ROC: 1.00
+AUC-ROC for class 0: 1.00
+AUC-ROC for class 1: 1.00
+AUC-ROC for class 2: 1.00
+AUC-ROC for class 3: 1.00
+AUC-ROC for class 4: 0.99
+AUC-ROC for class 5: 1.00
+AUC-ROC for class 6: 1.00
+AUC-ROC for class 7: 1.00
+AUC-ROC for class 8: 1.00
+AUC-ROC for class 9: 1.00
+Accuracy:0.995977900552486, Recall: 0.995977900552486, Precision: 0.9961166461172334, F1-Score: 0.9959727865580772
+Macro_Recall: 0.9922888628735195, Macro_Precision: 0.9920573532079215, Macro_F1-Score: 0.9917946288977346

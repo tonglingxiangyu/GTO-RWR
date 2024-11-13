@@ -1,0 +1,16 @@
+python fit_model.py --alg="gat" --dataset="UNSW-NB15" --binary=False --residual=True
+python fit_model.py --alg="sage" --dataset="tor" --binary=True --residual=True
+python fit_model.py --alg="sage" --dataset="tor" --binary=False --residual=False --GTO=True --RWR=True
+
+#Gan
+python fit_model.py --alg="sage" --dataset="unsw" --binary=False --residual=False --GTO=True --RWR=False 
+
+# rwr的实验需要先update_graph.py更新图结构，然后在rwr.py生成新的采样结果，然后将update之后的文件放到datasets文件夹下对应的数据集中即可开始实验
+
+# neo4j
+MATCH (n)
+CALL apoc.path.subgraphAll(n, {maxLevel: 1})
+YIELD nodes
+RETURN size(nodes) AS nodeCount, nodes
+ORDER BY nodeCount DESC
+LIMIT 1

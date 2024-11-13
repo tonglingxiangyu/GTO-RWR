@@ -1,0 +1,30 @@
+
+Classification Report:
+              precision    recall  f1-score   support
+
+     Class 0       1.00      1.00      1.00      4519
+     Class 1       0.51      0.83      0.63        36
+     Class 2       0.38      0.67      0.48        12
+     Class 3       0.00      0.00      0.00         8
+     Class 4       0.79      0.88      0.83        50
+     Class 5       0.00      0.00      0.00         1
+     Class 6       0.44      0.35      0.39        34
+     Class 8       0.00      0.00      0.00         3
+     Class 9       0.00      0.00      0.00         3
+
+    accuracy                           0.98      4666
+   macro avg       0.35      0.41      0.37      4666
+weighted avg       0.98      0.98      0.98      4666
+Macro-average AUC-ROC: 0.99
+Weighted-average AUC-ROC: 1.00
+AUC-ROC for class 0: 1.00
+AUC-ROC for class 1: 1.00
+AUC-ROC for class 2: 1.00
+AUC-ROC for class 3: 0.99
+AUC-ROC for class 4: 1.00
+AUC-ROC for class 5: 1.00
+AUC-ROC for class 6: 0.99
+AUC-ROC for class 7: 0.98
+AUC-ROC for class 8: 1.00
+Accuracy:0.9841903614457831, Recall: 0.9841903614457831, Precision: 0.9848338834042369, F1-Score: 0.9837961958432373
+Macro_Recall: 0.6314570374945058, Macro_Precision: 0.5423130088901778, Macro_F1-Score: 0.5613688118326409
